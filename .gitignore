@@ -1,0 +1,53 @@
+# ===========================
+# Build
+# ===========================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===========================
+# IntelliJ IDEA
+# ===========================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ===========================
+# VS Code
+# ===========================
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# ===========================
+# Eclipse
+# ===========================
+.metadata/
+bin/
+tmp/
+
+# ===========================
+# OS / Misc
+# ===========================
+.DS_Store
+Thumbs.db
+*.log
+.env
+*.env
+
+# ===========================
+# Maven
+# ===========================
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
