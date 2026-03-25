@@ -5,20 +5,20 @@ Short description of what this service does.
 ## Prerequisites
 
 1. Java 17+
-2. Maven Wrapper (`mvnw`) included in repo
+2. Maven
 
 ## Run
 
 ### Dev
 
 ```bash
-./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
 ### Prod
 
 ```bash
-DB_URL=jdbc:postgresql://host:5432/mydb DB_USERNAME=postgres DB_PASSWORD=secret ./mvnw spring-boot:run -Dspring-boot.run.profiles=prod
+mvn spring-boot:run -Dspring-boot.run.profiles=prod
 ```
 
 ## API Docs
@@ -35,17 +35,11 @@ DB_URL=jdbc:postgresql://host:5432/mydb DB_USERNAME=postgres DB_PASSWORD=secret 
 ## Test and Coverage
 
 ```bash
-./mvnw test
-./mvnw test jacoco:report
+mvn test
+mvn test jacoco:report
 ```
 
 Coverage report: `target/site/jacoco/index.html`
-
-## Environment Variables (Prod)
-
-1. `DB_URL`
-2. `DB_USERNAME`
-3. `DB_PASSWORD`
 
 ## Configuration Files
 
